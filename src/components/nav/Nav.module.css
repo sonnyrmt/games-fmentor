@@ -1,0 +1,126 @@
+.nav {
+  height: auto;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.containerBrandSearch {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.searchBar {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: #929292;
+  font-weight: bold;
+  width: 250px;
+  max-width: 250px;
+  background-color: #3a3b3c;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburguer {
+  display: none;
+  align-self: center;
+  padding: 20px;
+}
+
+.containerLeft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+h3 {
+  margin: 0 30px 0 0px;
+}
+
+.createBtn {
+  align-self: flex-end;
+}
+
+.searchBtn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  align-self: center;
+  margin-left: -80px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span {
+  color: #1976d2;
+}
+
+button:hover {
+  color: #1976d2;
+}
+
+.selectInput {
+  margin: 0 10px;
+  padding: 10px;
+  color: #929292;
+  font-weight: bold;
+  background-color: #3a3b3c;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn {
+  padding: 10px;
+  width: auto;
+  transition: 0.3s;
+}
+
+.createGame {
+  transition: 0.3s;
+}
+
+.createGame:hover {
+  color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .containerBrandSearch {
+    width: auto;
+    z-index: 999;
+  }
+  .searchBar {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+  .hamButton {
+    display: block;
+    position: relative;
+  }
+  .hamburguer {
+    display: block;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+}
